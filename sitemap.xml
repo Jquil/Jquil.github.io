@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2020-01-06T08:17:13.671Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2020-01-06T08:15:06.256Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/01/06/%E5%9C%A8Kotlin%E4%B8%8B%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/</loc>
+    
+    <lastmod>2020-01-06T08:13:03.752Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/category/index.html</loc>
+    
+    <lastmod>2020-01-06T08:08:34.409Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/01/06/hello-world/</loc>
+    
+    <lastmod>2020-01-06T07:15:34.934Z</lastmod>
+    
+  </url>
+  
+</urlset>
