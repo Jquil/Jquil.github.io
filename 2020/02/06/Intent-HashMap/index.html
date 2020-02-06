@@ -108,6 +108,68 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
@@ -137,7 +199,20 @@
         </header>
 
         <div class="post-content">
-            
+            <p>@(Intent)[HashMap]</p>
+<hr>
+<h2 id="Intent-amp-HashMap"><a href="#Intent-amp-HashMap" class="headerlink" title="#Intent&amp;HashMap"></a>#Intent&amp;HashMap</h2><p>在进行跳转的时候会使用到 <strong>Intent</strong>，可以封装为一个方法“复用”。当但需要传递参数，又需要重新定义。我们可以通过Intent&amp;HashMap结合，使程序更加<code>效率</code> </p>
+<p>#####创建HashMap</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String,String&gt; map &#x3D; new HashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
+<p>#####&amp;&amp;Intent</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Intent intent &#x3D; new Intent(this,Target.class);</span><br></pre></td></tr></table></figure>
+<p>#####HashMap添加至Inent中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">intent.putExtra(&quot;map&quot;,(Serializable) map);</span><br></pre></td></tr></table></figure>
+<h3 id="获取Intent中的HashMap"><a href="#获取Intent中的HashMap" class="headerlink" title="*获取Intent中的HashMap"></a>*获取Intent中的HashMap</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;String,String&gt; &#x3D; (HashMap&lt;String,String&gt;) getIntent().getSerializableExtra(&quot;map&quot;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>每天都在进步。</p>
+</blockquote>
+
         </div>
 
         
