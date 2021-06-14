@@ -2,7 +2,7 @@ window.technology = {
     "data" :[
         {
             "fileId":126,
-            "title":"Node入门123456",
+            "title":"Node入门",
             "subTitle":"比我差的人还没放弃，比我好的人还在努力，我就没资格说，我无能为力。",
             "imgUrl":"https://static.jqwong.cn/FpSFAO1PHs3OI-divvnnfjtUFZiE",
             "tag":["Node"],
