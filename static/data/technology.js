@@ -755,8 +755,8 @@ window.technology = {
         {
             "fileId":32,
             "title":"享元模式",
-            "subTitle":"https://static.jqwong.cn/Fj_lEQ2JkCeICIgxi0eQ4OFPuwQZ",
-            "imgUrl":"今日之事勿候明日，自己之事勿候他人。",
+            "subTitle":"今日之事勿候明日，自己之事勿候他人。",
+            "imgUrl":"https://static.jqwong.cn/Fj_lEQ2JkCeICIgxi0eQ4OFPuwQZ",
             "tag":["设计模式"],
             "date":"2020-09-06"
         },
