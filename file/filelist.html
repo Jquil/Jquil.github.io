@@ -69,6 +69,7 @@
     var local  = mPath.substring(mPath.lastIndexOf("/") + 1,mPath.length)
         mPath  = mPath.substring(0,mPath.lastIndexOf("/"))
         mPath  = mPath.replace("file:///","")
+    console.log(mPath)
     var fso	   = new ActiveXObject("Scripting.FileSystemObject")
 
     function load(path,ul){
