@@ -1,6 +1,14 @@
 {
     "data":[
         {
+            "fileId":133,
+            "title":"Redis",
+            "subTitle":"誓言只是一时的失言。",
+            "imgUrl":"https://static.jqwong.cn//202109181358904.png",
+            "tag":["Database"],
+            "date":"2021-07-12"
+        },
+        {
             "fileId":132,
             "title":"SQL-Server",
             "subTitle":"少走了弯路，也就错过了风景。无论如何，感谢经历。",
