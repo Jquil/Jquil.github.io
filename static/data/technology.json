@@ -1,6 +1,14 @@
 {
     "data":[
         {
+            "fileId":137,
+            "title":"文字省略溢出效果",
+            "subTitle":"这是世界从不缺少机遇，只是缺少抓住机遇的手。",
+            "imgUrl":"https://static.jqwong.cn/202109181828604.png",
+            "tag":["CSS"],
+            "date":"2021-08-02"
+        },
+        {
             "fileId":136,
             "title":"setTimeout、Promise、Async/Await的區別",
             "subTitle":"不是没有想过放弃，只是始终没办法做到。",
