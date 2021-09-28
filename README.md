@@ -31,7 +31,7 @@
 
 1. 安裝webpack：`npm install -g webpack`
 
-1. Vue-CLI3可以通過`vue init projectName` 安裝，CLI2的通過`vue create webpack projectName` 安裝
+1. Vue-CLI3可以通過`vue init projectName` 安裝，CLI2的通過`vue create projectName` 安裝
 
 1. 安裝完成後，切換到目錄下，`npm run dev`啟動
 
