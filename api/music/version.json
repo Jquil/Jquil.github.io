@@ -1,7 +1,9 @@
 { 
-  "version":"1.0.0",
-  "title":"新版本 V1.0.1",
-  "content":[ "1. 初始版本"],
-  "apk":"https://jqwong.cn/file/app-release.apk",
+  "version":"2.0.0",
+  "title":"新版本 V2.0.0",
+  "content":[ "1. 新增查看歌曲页",
+              "2. 新增自动切换歌曲功能",
+              "3. 更换部分场景图片"],
+  "apk":"https://jqwong.cn/file/app-music-release.apk",
   "ipa":""
 }
