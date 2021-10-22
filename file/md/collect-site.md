@@ -14,6 +14,6 @@
 
 5. [太极创客](http://www.taichi-maker.com/)
 
-# Markdown
+# blog theme
 
-1. [十分钟定制自己的Markdown语法](https://community.jiguang.cn/article/464234)
+1. [hexo-theme-cactus](https://github.com/probberechts/hexo-theme-cactus)
