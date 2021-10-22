@@ -399,10 +399,6 @@
             html #md[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
                 padding: 2em
             }
-
-            .line-number{
-                border-right: 1px solid rgba(0, 0, 0, .2);
-            }
         }
 
         @media screen and (max-width:450px) {
@@ -441,6 +437,23 @@
         #modal img{
             width: 100%;
         }
+
+        pre::-webkit-scrollbar{
+            width: 4px;
+            height: 2px;
+        }
+
+        pre::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+        }
+        
+        pre::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 0;
+            background: rgba(0,0,0,0.1);
+        }
     </style>
     <body>
         <div id="md" for="html-export">
@@ -453,14 +466,21 @@
     <script>
         var modal = document.getElementById("modal")
         var xhr = new XMLHttpRequest()
-        xhr.open("GET","https://md.jqwong.cn/technology/130.md",true)
+        xhr.open("GET","https://md.jqwong.cn/technology/99.md",true)
         xhr.send()
         xhr.onreadystatechange = () => {
             if(xhr.readyState == 4 && xhr.status == 200){
                 let res = xhr.response
-                res = res.replaceAll("** ","**")
-                res = res.replaceAll(" **","**")
+                let reg = /\*\* .* []?\*\*/g
+                res = res.replaceAll(reg,(match) => {
+                    match = match.replaceAll("** ","**")
+                    match = match.replaceAll(" **","**")
+                    return match
+                })
+                res = res.replaceAll("\\'","'")
                 res = res.replaceAll("\\\"","\"")
+                res = res.replaceAll("\\<","<")
+                res = res.replaceAll("\\>",">")
                 document.getElementById('show').innerHTML = marked(res)
                 lineNum()
                 cb()
@@ -473,7 +493,7 @@
             var pre = document.getElementsByTagName("pre")
             for(let i = 0; i < pre.length; i++){
                 if(pre[i].childNodes[0].tagName == "CODE"){
-                    let w_number = 5
+                    let w_number = 7
                     let reg = /\n/ig
                     let data = pre[i].childNodes[0].childNodes[0].data
                     let match = data.match(reg)
@@ -525,3 +545,7 @@
         }
     </script>
 </html>
+<!-- 
+    JS正则（贪婪模式）=> 当匹配子串成功后，停止该次匹配，继续下一个子串的匹配
+    https://blog.csdn.net/iteye_20185/article/details/81890047
+ -->
