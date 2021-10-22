@@ -2,333 +2,78 @@
 <html>
 
 <head>
-  <title></title>
+  <title>README</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-<style>
-  code,
-  pre {
-    color: #333;
-    background: none;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.4;
+  
 
-    -moz-tab-size: 8;
-    -o-tab-size: 8;
-    tab-size: 8;
 
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
 
-  /* Code blocks */
-  pre {
-    padding: .8em;
-    overflow: auto;
-    /* border: 1px solid #ddd; */
-    border-radius: 3px;
-    /* background: #fff; */
-    background: #f5f5f5;
-  }
 
-  /* Inline code */
-  :not(pre)>code {
-    padding: .1em;
-    border-radius: .3em;
-    white-space: normal;
-    background: #f5f5f5;
-  }
 
-  html body {
-    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    overflow: initial;
-    box-sizing: border-box;
-    word-wrap: break-word
-  }
 
-  html body>:first-child {
-    margin-top: 0
-  }
 
-  html body h1,
-  html body h2,
-  html body h3,
-  html body h4,
-  html body h5,
-  html body h6 {
-    line-height: 1.2;
-    margin-top: 1em;
-    margin-bottom: 16px;
-    color: #000
-  }
 
-  html body h1 {
-    font-size: 2.25em;
-    font-weight: 300;
-    padding-bottom: .3em
-  }
 
-  html body h2 {
-    font-size: 1.75em;
-    font-weight: 400;
-    padding-bottom: .3em
-  }
+  <style>
+    /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+    code,
+    pre{
+      color: #333;
+      background: none;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.4;
 
-  html body h3 {
-    font-size: 1.5em;
-    font-weight: 500
-  }
+      -moz-tab-size: 8;
+      -o-tab-size: 8;
+      tab-size: 8;
 
-  html body h4 {
-    font-size: 1.25em;
-    font-weight: 600
-  }
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+    }
 
-  html body h5 {
-    font-size: 1.1em;
-    font-weight: 600
-  }
+    /* Code blocks */
+    pre{
+      padding: .8em;
+      overflow: auto;
+      /* border: 1px solid #ddd; */
+      border-radius: 3px;
+      /* background: #fff; */
+      background: #f5f5f5;
+    }
 
-  html body h6 {
-    font-size: 1em;
-    font-weight: 600
-  }
+    /* Inline code */
+    :not(pre)>code{
+      padding: .1em;
+      border-radius: .3em;
+      white-space: normal;
+      background: #f5f5f5;
+    }
 
-  html body h1,
-  html body h2,
-  html body h3,
-  html body h4,
-  html body h5 {
-    font-weight: 600
-  }
-
-  html body h5 {
-    font-size: 1em
-  }
-
-  html body h6 {
-    color: #5c5c5c
-  }
-
-  html body strong {
-    color: #000
-  }
-
-  html body del {
-    color: #5c5c5c
-  }
-
-  html body a:not([href]) {
-    color: inherit;
-    text-decoration: none
-  }
-
-  html body a {
-    color: #08c;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #08c;
-  }
-
-  html body a:hover {
-    color: #00a3f5;
-    border-bottom: 1px solid #00a3f5;
-  }
-
-  html body img {
-    max-width: 100%
-  }
-
-  html body>p {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: break-word
-  }
-
-  html body>ul,
-  html body>ol {
-    margin-bottom: 16px
-  }
-
-  html body ul,
-  html body ol {
-    padding-left: 2em
-  }
-
-  html body ul.no-list,
-  html body ol.no-list {
-    padding: 0;
-    list-style-type: none
-  }
-
-  html body ul ul,
-  html body ul ol,
-  html body ol ol,
-  html body ol ul {
-    margin-top: 0;
-    margin-bottom: 0
-  }
-
-  html body li {
-    margin-bottom: 0
-  }
-
-  html body li.task-list-item {
-    list-style: none
-  }
-
-  html body li>p {
-    margin-top: 0;
-    margin-bottom: 0
-  }
-
-  html body blockquote {
-    margin: 16px 0;
-    font-size: inherit;
-    padding: 0 15px;
-    color: #5c5c5c;
-    border-left: 4px solid #d6d6d6
-  }
-
-  html body blockquote>:first-child {
-    margin-top: 0;
-  }
-
-  html body blockquote>:last-child {
-    margin-bottom: 0
-  }
-
-  html body table {
-    margin: 10px 0 15px 0;
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: block;
-    width: 100%;
-    overflow: auto;
-    word-break: normal;
-    word-break: keep-all
-  }
-
-  html body table th {
-    font-weight: bold;
-    color: #000
-  }
-
-  html body table td,
-  html body table th {
-    border: 1px solid #d6d6d6;
-    padding: 6px 13px
-  }
-
-  html body dl {
-    padding: 0
-  }
-
-  html body dl dt {
-    padding: 0;
-    margin-top: 16px;
-    font-size: 1em;
-    font-style: italic;
-    font-weight: bold
-  }
-
-  html body dl dd {
-    padding: 0 16px;
-    margin-bottom: 16px
-  }
-
-  html body code {
-    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-    font-size: .85em !important;
-    color: #000;
-    background-color: #f0f0f0;
-    border-radius: 3px;
-    padding: .2em 0
-  }
-
-  html body code::before,
-  html body code::after {
-    letter-spacing: -0.2em;
-    content: "\00a0"
-  }
-
-  html body pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: .85em !important;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0
-  }
-
-  html body .highlight {
-    margin-bottom: 16px
-  }
-
-  html body .highlight pre,
-  html body pre {
-    padding: 1em;
-    overflow: auto;
-    font-size: .85em !important;
-    line-height: 1.45;
-    border: #d6d6d6;
-    border-radius: 3px
-  }
-
-  html body pre code,
-  html body pre tt {
-    display: inline;
-    max-width: initial;
-    padding: 0;
-    margin: 0;
-    overflow: initial;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0
-  }
-
-  html body pre code:before,
-  html body pre tt:before,
-  html body pre code:after,
-  html body pre tt:after {
-    content: normal
-  }
-
-  html body p,
-  html body blockquote,
-  html body ul,
-  html body ol,
-  html body dl,
-  html body pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
-
-  html body kbd {
-    color: #000;
-    border: 1px solid #d6d6d6;
-    border-bottom: 2px solid #c7c7c7;
-    padding: 2px 4px;
-    background-color: #f0f0f0;
-    border-radius: 3px
-  }
-
-  @media print {
     html body {
-      background-color: #fff
+      font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      overflow: initial;
+      box-sizing: border-box;
+      word-wrap: break-word
+    }
+
+    html body>:first-child {
+      margin-top: 0
     }
 
     html body h1,
@@ -337,511 +82,407 @@
     html body h4,
     html body h5,
     html body h6 {
-      color: #000;
-      page-break-after: avoid
+      line-height: 1.2;
+      margin-top: 1em;
+      margin-bottom: 16px;
+      color: #000
     }
 
-    html body blockquote {
+    html body h1 {
+      font-size: 2.25em;
+      font-weight: 300;
+      padding-bottom: .3em
+    }
+
+    html body h2 {
+      font-size: 1.75em;
+      font-weight: 400;
+      padding-bottom: .3em
+    }
+
+    html body h3 {
+      font-size: 1.5em;
+      font-weight: 500
+    }
+
+    html body h4 {
+      font-size: 1.25em;
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1.1em;
+      font-weight: 600
+    }
+
+    html body h6 {
+      font-size: 1em;
+      font-weight: 600
+    }
+
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5 {
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1em
+    }
+
+    html body h6 {
       color: #5c5c5c
     }
 
-    html body pre {
-      page-break-inside: avoid
+    html body strong {
+      color: #000
     }
 
-    html body table {
-      display: table
+    html body del {
+      color: #5c5c5c
+    }
+
+    html body a:not([href]) {
+      color: inherit;
+      text-decoration: none
+    }
+
+    html body a {
+      color: #08c;
+      text-decoration: none
+    }
+
+    html body a:hover {
+      color: #00a3f5;
+      text-decoration: none
     }
 
     html body img {
+      max-width: 100%
+    }
+
+    html body>p {
+      margin-top: 0;
+      margin-bottom: 16px;
+      word-wrap: break-word
+    }
+
+    html body>ul,
+    html body>ol {
+      margin-bottom: 16px
+    }
+
+    html body ul,
+    html body ol {
+      padding-left: 2em
+    }
+
+    html body ul.no-list,
+    html body ol.no-list {
+      padding: 0;
+      list-style-type: none
+    }
+
+    html body ul ul,
+    html body ul ol,
+    html body ol ol,
+    html body ol ul {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body li {
+      margin-bottom: 0
+    }
+
+    html body li.task-list-item {
+      list-style: none
+    }
+
+    html body li>p {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body .task-list-item-checkbox {
+      margin: 0 .2em .25em -1.8em;
+      vertical-align: middle
+    }
+
+    html body .task-list-item-checkbox:hover {
+      cursor: pointer
+    }
+
+    html body blockquote {
+      margin: 16px 0;
+      font-size: inherit;
+      padding: 0 15px;
+      color: #5c5c5c;
+      border-left: 4px solid #d6d6d6
+    }
+
+    html body blockquote>:first-child {
+      margin-top: 0
+    }
+
+    html body blockquote>:last-child {
+      margin-bottom: 0
+    }
+
+    html body hr {
+      height: 4px;
+      margin: 32px 0;
+      background-color: #d6d6d6;
+      border: 0 none
+    }
+
+    html body table {
+      margin: 10px 0 15px 0;
+      border-collapse: collapse;
+      border-spacing: 0;
       display: block;
-      max-width: 100%;
-      max-height: 100%
+      width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all
     }
 
-    html body pre,
+    html body table th {
+      font-weight: bold;
+      color: #000
+    }
+
+    html body table td,
+    html body table th {
+      border: 1px solid #d6d6d6;
+      padding: 6px 13px
+    }
+
+    html body dl {
+      padding: 0
+    }
+
+    html body dl dt {
+      padding: 0;
+      margin-top: 16px;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: bold
+    }
+
+    html body dl dd {
+      padding: 0 16px;
+      margin-bottom: 16px
+    }
+
     html body code {
-      word-wrap: break-word;
-      white-space: pre
+      font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+      font-size: .85em !important;
+      color: #000;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+      padding: .2em 0
     }
-  }
 
-  html div[for="html-export"]:not([data-presentation-mode]) {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    overflow: auto
-  }
+    html body code::before,
+    html body code::after {
+      letter-spacing: -0.2em;
+      content: "\00a0"
+    }
 
-  html div[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-    position: relative;
-    top: 0
-  }
+    html body pre>code {
+      padding: 0;
+      margin: 0;
+      font-size: .85em !important;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0
+    }
 
-  @media screen and (min-width:914px) {
+    html body pre {
+      padding: 1em;
+      overflow: auto;
+      font-size: .85em !important;
+      line-height: 1.45;
+      border: #d6d6d6;
+      border-radius: 3px
+    }
+
+    html body pre code,
+    html body pre tt {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0
+    }
+
+    html body pre code:before,
+    html body pre tt:before,
+    html body pre code:after,
+    html body pre tt:after {
+      content: normal
+    }
+
+    html body p,
+    html body blockquote,
+    html body ul,
+    html body ol,
+    html body dl,
+    html body pre {
+      margin-top: 0;
+      margin-bottom: 16px
+    }
+
+    html body kbd {
+      color: #000;
+      border: 1px solid #d6d6d6;
+      border-bottom: 2px solid #c7c7c7;
+      padding: 2px 4px;
+      background-color: #f0f0f0;
+      border-radius: 3px
+    }
+
+    @media print {
+      html body {
+        background-color: #fff
+      }
+
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        color: #000;
+        page-break-after: avoid
+      }
+
+      html body blockquote {
+        color: #5c5c5c
+      }
+
+      html body pre {
+        page-break-inside: avoid
+      }
+
+      html body table {
+        display: table
+      }
+
+      html body img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%
+      }
+
+      html body pre,
+      html body code {
+        word-wrap: break-word;
+        white-space: pre
+      }
+    }
+
+    .markdown-preview {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box
+    }
+
     html div[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-      padding: 2em calc(50% - 457px + 2em)
+      position: relative;
+      top: 0
     }
-  }
 
-  @media screen and (max-width:914px) {
-    html div[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-      padding: 2em
+    @media screen and (min-width:914px) {
+      html div[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em calc(50% - 457px + 2em)
+      }
     }
-  }
 
-  @media screen and (max-width:450px) {
-    html div[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
-      font-size: 14px !important;
-      padding: 1em
+    @media screen and (max-width:914px) {
+      html div[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em
+      }
     }
-  }
 
-  @font-face {
-    font-family: "Material Icons";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Material Icons"), local("MaterialIcons-Regular"), url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff");
-  }
+    @media screen and (max-width:450px) {
+      html div[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        font-size: 14px !important;
+        padding: 1em
+      }
+    }
 
-  .admonition {
-    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2); */
-    box-shadow: 1px 0 3px rgba(0, 0, 0, .14);
-    position: relative;
-    margin: 1.5625em 0;
-    padding: 0 1.2rem;
-    border-left: .4rem solid rgba(68, 138, 255, .8);
-    /* border-radius: .2rem; */
-    background-color: rgba(255, 255, 255, 0.05);
-    overflow: auto;
-  }
-
-  .admonition>p {
-    margin-top: .8rem;
-  }
-
-  .admonition>.admonition-title {
-    margin: 0 -1.2rem;
-    padding: .8rem 1.2rem .8rem 3.6rem;
-    border-bottom: 1px solid rgba(68, 138, 255, .2);
-    background-color: rgba(68, 138, 255, .1);
-    font-weight: 700;
-  }
-
-  .admonition>.admonition-title:before {
-    position: absolute;
-    left: 1.2rem;
-    font-size: 1.5rem;
-    color: rgba(68, 138, 255, .8);
-    content: "\E3C9";
-  }
-
-  .admonition>.admonition-title:before {
-    font-family: Material Icons;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 2rem;
-    text-transform: none;
-    white-space: nowrap;
-    speak: none;
-    word-wrap: normal;
-    direction: ltr;
-  }
-
-  .admonition.summary,
-  .admonition.abstract,
-  .admonition.tldr {
-    border-left-color: rgba(0, 176, 255, .8);
-  }
-
-  .admonition.summary>.admonition-title,
-  .admonition.abstract>.admonition-title,
-  .admonition.tldr>.admonition-title {
-    background-color: rgba(0, 176, 255, .1);
-    border-bottom-color: rgba(0, 176, 255, .2);
-  }
-
-  .admonition.summary>.admonition-title:before,
-  .admonition.abstract>.admonition-title:before,
-  .admonition.tldr>.admonition-title:before {
-    color: rgba(0, 176, 255, 1);
-    ;
-    content: "\E8D2";
-  }
-
-  .admonition.hint,
-  .admonition.tip {
-    border-left-color: rgba(0, 191, 165, .8);
-  }
-
-  .admonition.hint>.admonition-title,
-  .admonition.tip>.admonition-title {
-    background-color: rgba(0, 191, 165, .1);
-    border-bottom-color: rgba(0, 191, 165, .2);
-  }
-
-  .admonition.hint>.admonition-title:before,
-  .admonition.tip>.admonition-title:before {
-    color: rgba(0, 191, 165, 1);
-    content: "\E80E";
-  }
-
-  .admonition.info,
-  .admonition.todo {
-    border-left-color: rgba(0, 184, 212, .8);
-  }
-
-  .admonition.info>.admonition-title,
-  .admonition.todo>.admonition-title {
-    background-color: rgba(0, 184, 212, .1);
-    border-bottom-color: rgba(0, 184, 212, .2);
-  }
-
-  .admonition.info>.admonition-title:before,
-  .admonition.todo>.admonition-title:before {
-    color: rgba(0, 184, 212, 1);
-    content: "\E88E";
-  }
-
-  .admonition.success,
-  .admonition.check,
-  .admonition.done {
-    border-left-color: rgba(0, 200, 83, .8);
-  }
-
-  .admonition.success>.admonition-title,
-  .admonition.check>.admonition-title,
-  .admonition.done>.admonition-title {
-    background-color: rgba(0, 200, 83, .1);
-    border-bottom-color: rgba(0, 200, 83, .2);
-  }
-
-  .admonition.success>.admonition-title:before,
-  .admonition.check>.admonition-title:before,
-  .admonition.done>.admonition-title:before {
-    color: rgba(0, 200, 83, 1);
-    content: "\E876";
-  }
-
-  .admonition.question,
-  .admonition.help,
-  .admonition.faq {
-    border-left-color: rgba(100, 221, 23, .8);
-  }
-
-  .admonition.question>.admonition-title,
-  .admonition.help>.admonition-title,
-  .admonition.faq>.admonition-title {
-    background-color: rgba(100, 221, 23, .1);
-    border-bottom-color: rgba(100, 221, 23, .2);
-  }
-
-  .admonition.question>.admonition-title:before,
-  .admonition.help>.admonition-title:before,
-  .admonition.faq>.admonition-title:before {
-    color: rgba(100, 221, 23, 1);
-    content: "\E887";
-  }
-
-  .admonition.warning,
-  .admonition.attention,
-  .admonition.caution {
-    border-left-color: rgba(255, 145, 0, .8);
-  }
-
-  .admonition.warning>.admonition-title,
-  .admonition.attention>.admonition-title,
-  .admonition.caution>.admonition-title {
-    background-color: rgba(255, 145, 0, .1);
-    border-bottom-color: rgba(255, 145, 0, .2);
-  }
-
-  .admonition.attention>.admonition-title:before {
-    color: rgba(255, 145, 0, 1);
-    content: "\E417";
-  }
-
-  .admonition.warning>.admonition-title:before,
-  .admonition.caution>.admonition-title:before {
-    color: rgba(255, 145, 0, 1);
-    content: "\E002";
-  }
-
-  .admonition.failure,
-  .admonition.fail,
-  .admonition.missing {
-    border-left-color: rgba(255, 82, 82, .8);
-  }
-
-  .admonition.failure>.admonition-title,
-  .admonition.fail>.admonition-title,
-  .admonition.missing>.admonition-title {
-    background-color: rgba(255, 82, 82, .1);
-    border-bottom-color: rgba(255, 82, 82, .2);
-  }
-
-  .admonition.failure>.admonition-title:before,
-  .admonition.fail>.admonition-title:before,
-  .admonition.missing>.admonition-title:before {
-    color: rgba(255, 82, 82, 1);
-    content: "\E14C";
-  }
-
-  .admonition.danger,
-  .admonition.error,
-  .admonition.bug {
-    border-left-color: rgba(255, 23, 68, .8);
-  }
-
-  .admonition.danger>.admonition-title,
-  .admonition.error>.admonition-title,
-  .admonition.bug>.admonition-title {
-    background-color: rgba(255, 23, 68, .1);
-    border-bottom-color: rgba(255, 23, 68, .2);
-  }
-
-  .admonition.danger>.admonition-title:before {
-    color: rgba(255, 23, 68, 1);
-    content: "\E3E7";
-  }
-
-  .admonition.error>.admonition-title:before {
-    color: rgba(255, 23, 68, 1);
-    content: "\E14C";
-  }
-
-  .admonition.bug>.admonition-title:before {
-    color: rgba(255, 23, 68, 1);
-    content: "\E868";
-  }
-
-  .admonition.example,
-  .admonition.snippet {
-    border-left-color: rgba(0, 184, 212, .8);
-  }
-
-  .admonition.example>.admonition-title,
-  .admonition.snippet>.admonition-title {
-    background-color: rgba(0, 184, 212, .1);
-    border-bottom-color: rgba(0, 184, 212, .2);
-  }
-
-  .admonition.example>.admonition-title:before,
-  .admonition.snippet>.admonition-title:before {
-    color: rgba(0, 184, 212, 1);
-    content: "\E242";
-  }
-
-  .admonition.quote,
-  .admonition.cite {
-    border-left-color: rgba(158, 158, 158, .8);
-  }
-
-  .admonition.quote>.admonition-title,
-  .admonition.cite>.admonition-title {
-    background-color: rgba(158, 158, 158, .1);
-    border-bottom-color: rgba(158, 158, 158, .2);
-  }
-
-  .admonition.quote>.admonition-title:before,
-  .admonition.cite>.admonition-title:before {
-    color: rgba(158, 158, 158, 1);
-    content: "\E244";
-  }
-
-  hr{
-    background-image: repeating-linear-gradient(-45deg,#ddd,#ddd 4px,transparent 0,transparent 8px);
-    border: 0;
-    height: 3px;
-    margin: 40px 0;
-    color: #333;
-  }
-  /* html body hr {
-    height: 4px;
-    margin: 32px 0;
-    background-color: #d6d6d6;
-    border: 0 none
-  } */
-  
   .line-number{
     user-select: none;
     display: inline-block;
     text-align: right;
+    padding-right: 10px;
     margin-right: 10px;
+    border-right: 1px solid rgba(0, 0, 0, .2);
   }
 
-</style>
+    /* Please visit the URL below for more information: */
+    /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+  </style>
+</head>
 
 <body>
   <div for="html-export">
     <div class="markdown-preview">
-      <pre><code>jqwong</code></pre>
-      <h1>&#x65B0;&#x5EFA;&#x9879;&#x76EE;</h1>
-
-      <pre><code>vue create demo -n</code></pre>
-      <p>-n&#xFF1A;&#x4E0D;&#x5E26;ESLint&#xFF0C;&#x6B64;&#x5904;&#x4F7F;&#x7528;Vue3&#x7248;&#x672C;</p>
-      <h1>&#x914D;&#x7F6E;&#x8DEF;&#x7531;</h1>
-
-      <p>&gt;&gt; <a href="https://juejin.cn/post/6844904150157754376">Vue3&#x4E2D;&#x7684;VueRouter&#x521D;&#x63A2;</a>
-      </p>
-
-      <pre><code>cnpm install vue-router@next --save</code></pre>
-      <p>&#x65B0;&#x5EFA;&#x5E76;&#x914D;&#x7F6E;&#x8DEF;&#x7531;&#x6587;&#x4EF6;&#xFF1A;<code>router/index.js</code>
-      </p>
-      <p>&#x5728;<code>main.js</code>&#x4E2D;&#x5F15;&#x5165;&#x5E76;&#x4F7F;&#x7528;</p>
-      <p>&#x5728;<code>App.vue</code>&#x4E2D;&#x8BBE;&#x7F6E;<code>&lt;router-view/&gt;</code></p>
-      <h1 class="mume-header">&#x914D;&#x7F6E;&#x4EE3;&#x7406;</h1>
-
-      <p>root&#x4E0B;&#x65B0;&#x5EFA;
-        <code>vue.config.js</code>
-        &#x5E76;&#x914D;&#x7F6E;&#xFF0C;&#x53C2;&#x8003;&#xFF1A;
-        <a href="https://cli.vuejs.org/zh/config/#devserver-proxy">&#x914D;&#x7F6E;&#x53C2;&#x8003;</a>
-      </p>
-
-      <div class="admonition abstract">
-        <p class="admonition-title">Abstract</p>
-        <p>&#x5F88;&#x4E45;</p>
-      </div>
-
-      <div class="admonition info">
-        <p class="admonition-title">Info</p>
-        <p>&#x4F60;&#x770B;&#x4E0D;&#x89C1;&#x6211;&#x3002;</p>
-      </div>
-      
-      <div class="admonition tip">
-        <p class="admonition-title">Tip</p>
-        <p>&#x7A0B;&#x5E8F;&#x5458;&#x52A1;&#x5FC5;&#x591A;&#x559D;&#x829D;&#x9EBB;&#xFF0C;&#x8FD9;&#x6837;&#x5934;&#x53D1;&#x624D;&#x4F1A;&#x8302;&#x5BC6;&#x3002;</p>
-      </div>
-
-      <div class="admonition success">
-        <p class="admonition-title">Success</p>
-        <p>&#x4ECA;&#x65E5;&#x4EFD;&#x7684;&#x5D29;&#x574F;&#x5DF2;&#x809D;&#x5B8C;&#x3002;</p>
-      </div>
-      
-      <div class="admonition question">
-        <p class="admonition-title">Question</p>
-        <p>&#x5148;&#x6709;&#x9E21;&#x8FD8;&#x662F;&#x5148;&#x6709;&#x86CB;&#xFF1F;</p>
-      </div>
-      
-      <div class="admonition warning">
-        <p class="admonition-title">Warning</p>
-        <p>warning: ignoring return value of &#x2018;scanf&#x2019;, declared with attribute warn_unused_result</p>
-      </div>
-      
-      <div class="admonition failure">
-        <p class="admonition-title">Failure</p>
-        <p>Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3</p>
-      </div>
-
-      <div class="admonition danger">
-        <p class="admonition-title">Danger</p>
-        <p>&#x9AD8;&#x538B;&#x7535;</p>
-      </div>
-      
-      <div class="admonition bug">
-        <p class="admonition-title">Bug</p>
-        <p>404 GET</p>
-      </div>
-        
-      <div class="admonition example">
-        <p class="admonition-title">Example</p>
-        <p>Admonition&#x6269;&#x5C55;&#x8BED;&#x6CD5;&#x5173;&#x952E;&#x8BCD;&#x5305;&#x62EC;&#xFF1A;</p>
-      </div>
-
-      <ul>
-        <li><input type="checkbox" checked> &#x8D77;&#x5E8A;</li>
-        <li><input type="checkbox" checked> &#x5237;&#x7259;</li>
-        <li><input type="checkbox"> &#x4E0A;&#x7F51;&#x8BFE;
-        <ul>
-          <li><input type="checkbox" checked> &#x6570;&#x636E;&#x5E93;</li>
-          <li><input type="checkbox" checked> &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</li>
-          <li><input type="checkbox" checked> &#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;</li>
-          <li><input type="checkbox"> &#x6570;&#x636E;&#x7ED3;&#x6784;</li>
-        </ul>
-        </li>
-        <li><input type="checkbox"> &#x505A;&#x4F5C;&#x4E1A;</li>
-        <li><input type="checkbox"> &#x7761;&#x89C9;</li>
-      </ul>
-
-      <hr/>
-
+      <h1 id="mouldmes">mouldmes</h1>
+  
       <blockquote>
-        <p>Hello World!</p>
+        <p>Hello world~</p>
       </blockquote>
-
-      <pre><code>int i = 0
-print(&apos;hello world&apos;)
-print(&apos;hello world&apos;)</code></pre>
-
-      <pre><code>int i = 0
-print(&apos;hello world&apos;)
-print(&apos;hello world&apos;)
-print(&apos;hello world&apos;)
-print(&apos;hello world&apos;)</code></pre>
-
-      <div style="display: none;">
-      状态框：
-
-      !!! abstract
-        很久
-
-
-      !!! info
-          你看不见我。
-
-
-      !!! tip
-          程序员务必多喝芝麻，这样头发才会茂密。
-
-      !!! success
-          今日份的崩坏已肝完。
-
-      !!! question
-          先有鸡还是先有蛋？
-
-      !!! warning
-          warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result
-
-      !!! failure
-          Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3
-
-      !!! danger
-          高压电
-
-      !!! bug
-          404 GET
-
-      !!! example
-          Admonition扩展语法关键词包括：
-
-
-
-      复选框：
-      * [x] 起床
-      * [x] 刷牙
-      * [ ] 上网课
-          * [x] 数据库
-          * [x] 操作系统
-          * [x] 计算机网络
-          * [ ] 数据结构
-      * [ ] 做作业
-      * [ ] 睡觉
-    </div>
-
-
+      <h2 id="project-setup">Project setup</h2>
+  
+      <pre><code>npm install</code></pre>
+      <h3 id="compiles-and-hot-reloads-for-development">Compiles and hot-reloads for development</h3>
+  
+      <pre><code>npm run serve</code></pre>
+      <h3 id="compiles-and-minifies-for-production">Compiles and minifies for production</h3>
+  
+      <pre><code>npm run build
+npm run build</code></pre>
+      <h3 id="run-your-tests">Run your tests</h3>
+  
+      <pre><code>npm run test</code></pre>
+      <h3 id="lints-and-fixes-files">Lints and fixes files</h3>
+  
+      <pre><code>npm run lint</code></pre>
+      <h3 id="customize-configuration">Customize configuration</h3>
+  
+      <p>See <a href="https://cli.vuejs.org/config/">Configuration Reference</a>.</p>
+      
+      
+      <div style="display:none">
+        * [x] 起床
+        * [x] 刷牙
+        * [ ] 上网课
+        * [x] 数据库
+        * [x] 操作系统
+        * [x] 计算机网络
+        * [ ] 数据结构
+        * [ ] 做作业
+        * [ ] 睡觉
+      </div>
     </div>
   </div>
 </body>
+
 <script>
 
   // Markdown 行号
   var pre = document.getElementsByTagName("pre")
-  var w_number = 15
+  var w_number = 5
   for(let i = 0; i < pre.length; i++){
     if(pre[i].childNodes[0].tagName == "CODE"){
       let reg = /\n/ig
@@ -850,11 +491,11 @@ print(&apos;hello world&apos;)</code></pre>
       if(match != null){
         w_number = w_number * (String(match.length).length)
       }
-      data = `<span class='line-number' style='width:${w_number}px'>1 |</span>` + data
+      data = `<span class='line-number' style='width:${w_number}px'>1</span>` + data
       let index = 1
       data = data.replaceAll("\n",function(match, p1, p2, p3, offset, string){
         index++
-        return `\n<span class='line-number' style='width:${w_number}px'>${index} |</span>`
+        return `\n<span class='line-number' style='width:${w_number}px'>${index}</span>`
       })
       pre[i].childNodes[0].innerHTML = data
     }
@@ -873,4 +514,5 @@ print(&apos;hello world&apos;)</code></pre>
     }
   }
 </script>
+
 </html>
