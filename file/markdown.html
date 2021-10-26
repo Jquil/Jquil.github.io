@@ -480,7 +480,7 @@
                 res = res.replaceAll("\\'","'")
                 res = res.replaceAll("\\\"","\"")
                 res = res.replaceAll("\\<","<")
-                res = res.replaceAll("\\>",">")
+                //res = res.replaceAll("\\>",">")
                 document.getElementById('show').innerHTML = marked(res)
                 lineNum()
                 cb()
