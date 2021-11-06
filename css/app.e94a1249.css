@@ -1,0 +1,1 @@
+#app,*,body,html{padding:0;margin:0}#app{width:100%}.max-width{width:800px;margin:0 auto}@media screen and (max-width:800px){.max-width{width:90%}}.flex{display:flex;flex-direction:column}.bb{border-bottom:2px solid rgba(0,0,0,.1)}.btn-up{width:15px;margin:0 auto;padding:15px;margin-bottom:15px;cursor:pointer;position:absolute;left:0;right:0}
