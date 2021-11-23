@@ -1,6 +1,14 @@
 {
     "data":[
         {
+            "fileId":144,
+            "title":"C#进阶",
+            "subTitle":"碰到事情，先处理情绪，后处理事情，情绪处理不好，事情只会更糟糕。",
+            "imgUrl":"https://static.jqwong.cn/202109181830698.png",
+            "tag":["C#"],
+            "date":"2021-11-23"
+        },
+        {
             "fileId":143,
             "title":"初探WPF",
             "subTitle":"其实我并没有太多期盼，毕竟一生很短，少有圆满。",
