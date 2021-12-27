@@ -1,6 +1,14 @@
 {
     "data":[
         {
+            "fileId":151,
+            "title":"控制反转(IoC)的学习",
+            "subTitle":"没有期待的日子反而事事顺利",
+            "imgUrl":"https://static.jqwong.cn/202109181830698.png",
+            "tag":["C#"],
+            "date":"2021-12-27"
+        },
+        {
             "fileId":150,
             "title":"深入学习EventBus",
             "subTitle":"与理想平等交易，同喧嚣保持距离。",
