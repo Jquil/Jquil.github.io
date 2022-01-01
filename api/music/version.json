@@ -1,13 +1,10 @@
 { 
-  "version":"4.0.0",
-  "title":"新版本 V4.0.0",
-  "content":[ "1. 实现“收藏歌手”功能",
-              "2. 实现“修改资料”功能",
-              "3. 实现通知功能",
-              "3. 开放“我的喜欢”入口",
-              "4. 修复“本地缓存”重复加载",
-              "5. 修复歌曲页ActionItem颜色不能适配夜间模式问题"
+  "version":"5.0.0",
+  "title":"新版本 V5.0.0",
+  "content":[ "1. 修改播放页歌词Widget高度为自适应",
+              "2. 修改搜索页为可滑动组件",
+              "3. 收藏歌手图像作缓存处理"
             ],
-  "apk":"https://jqwong.cn/file/app-music-release.apk",
+  "apk":"https://jqwong.cn/file/app-music-release5.apk",
   "ipa":""
 }
