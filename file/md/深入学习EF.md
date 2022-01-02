@@ -92,6 +92,84 @@ Entity Framework是一门ORM框架，ORM的思想就是将表映射为实体，�
 在EF中我们看到了有两种映射思想，一种XML映射思想，一种是标识特性的方式，我们这里用第二种~
 
 
+### 获取表结构
+
+打开我们的SQLServer，新增一个查询（记得切换测试使用的数据库）：
+```
+select TABLE_NAME,TABLE_TYPE,TABLE_CATALOG,TABLE_SCHEMA from INFORMATION_SCHEMA.TABLES
+```
+
+结果如下：
+<div align='center'>
+
+ ![](https://static.jqwong.cn/202201021705720.PNG)
+</div>
+可以看到，这条指令就帮我们找到了该数据库下的所有数据表
+
+然后我们再来使用这条指令：
+```
+select COLUMN_NAME,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,IS_NULLABLE from INFORMATION_SCHEMA.COLUMNS t where t.TABLE_NAME = 'tbUser'
+```
+
+结果如下：
+<div align='center'>
+
+ ![](https://static.jqwong.cn/202201021707108.PNG)
+</div>
+
+帮我们找到的对应数据表的字段信息，我们新建一个控制台应用，实现上述功能：
+
+首先安装套件：**System.Data.SqlClient**，主程序代码如下：
+
+```
+namespace ConsoleApp1
+{
+    class Program
+    {
+        // 配置数据库连接信息
+        private const string connStr = "server=DESKTOP-CJRAS5T\\SQLEXPRESS;database=test;Trusted_Connection=SSPI";
+        private static SqlConnection conn;
+
+        static void Main(string[] args)
+        {
+            try
+            {
+                conn = new SqlConnection(connStr);
+                conn.Open();
+                Console.WriteLine("Connection Success");
+                SqlDataAdapter adapter_tbs = new SqlDataAdapter("select TABLE_NAME,TABLE_TYPE,TABLE_CATALOG,TABLE_SCHEMA from INFORMATION_SCHEMA.TABLES", conn);
+                DataSet set_tbs = new DataSet();
+                adapter_tbs.Fill(set_tbs);
+                SqlDataAdapter adapter_struct;
+                DataSet set_struct = new DataSet();
+                foreach (DataRow tbRow in set_tbs.Tables[0].Rows) {
+                    Console.WriteLine($"Table:{tbRow[0]}");
+                    adapter_struct = new SqlDataAdapter($"select COLUMN_NAME,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,IS_NULLABLE from INFORMATION_SCHEMA.COLUMNS t where t.TABLE_NAME = '{tbRow[0]}';", conn);
+                    set_struct.Clear();
+                    adapter_struct.Fill(set_struct);
+                    foreach (DataRow structRow in set_struct.Tables[0].Rows) {
+                        Console.WriteLine($"Column:{structRow[0]},Type:{structRow[1]}");
+                    }
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+```
+
+最后成功输出（因为数据库里只有一张表，所以这里只输出一张表的信息）：
+<div align='center'>
+
+![](https://static.jqwong.cn/202201021711245.PNG)
+</div>  
+
+
+
 配置数据库连接
 
 特性（Table,Column）
