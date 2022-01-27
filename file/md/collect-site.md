@@ -35,3 +35,5 @@
 # Other
 
 1. [3D模型](https://www.thingiverse.com/)
+
+2. [一文搞懂PID控制算法](https://zhuanlan.zhihu.com/p/347372624)
