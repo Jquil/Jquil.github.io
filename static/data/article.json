@@ -1,6 +1,14 @@
 {
     "data":[
         {
+            "fileId":159,
+            "title":"学习使用Git",
+            "subTitle":"且听风吟，静待花开。",
+            "imgUrl":"https://static.jqwong.cn/202109181830698.png",
+            "tag":["版本控制"],
+            "date":"2022-02-09"
+        },
+        {
             "fileId":158,
             "title":"学习使用SVN",
             "subTitle":"没有所谓的失败，除非你不再尝试。",
