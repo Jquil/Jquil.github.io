@@ -1,0 +1,54 @@
+.title{
+    font-family: Impact,Haettenschweiler,Arial Narrow Bold,sans-serif;
+    font-size: 2em;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 0 25px 0;
+    padding-bottom: 15px;
+}
+
+.year{
+    margin-bottom: 45px;
+}
+
+.year-title{
+    font-family: Menlo,Meslo LG,monospace;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.year-title::before{
+    content: "#";
+    color: #6d9ee7;
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.list{
+    list-style: none;
+}
+
+.list>li{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 15px 0;
+    padding: 5px 0 5px 0;
+}
+
+.at-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.at-title>a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.at-title a:hover{
+    text-decoration: underline;
+}
