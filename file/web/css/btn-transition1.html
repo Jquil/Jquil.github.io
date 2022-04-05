@@ -1,0 +1,59 @@
+<!-- 
+    本节按钮过渡效果实现思路：
+        - 利用伪元素After实现一层
+        - 经过时改变After Width即可实现
+ -->
+ <!DOCTYPE html>
+<html>
+    <style>
+        body,html{
+            padding: 0;
+            margin: 0;   
+            width: 100%;
+            height: 100%; 
+        }
+        .center{
+            width: 100%;
+            height: 100%;
+            background-color: #f1f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn1{
+            width: 120px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: transparent;
+            position: relative;
+            border: 1px solid #dadada;
+            z-index: 999;
+        }
+        .btn1:after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: red;
+            transition: width 0.2s ease-in-out;
+            z-index: -1;
+        }
+
+        .btn1:hover:after{
+            width: 100%;
+        }
+
+        .btn1:hover{
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <div class="center">
+            <span class="btn1">Button</span>
+        </div>
+    </body>
+</html>
