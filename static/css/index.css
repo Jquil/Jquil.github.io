@@ -11,8 +11,11 @@
         filter: invert(1) hue-rotate(180deg);
     }
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 #app,
-*,
 body,
 html {
     padding: 0;
