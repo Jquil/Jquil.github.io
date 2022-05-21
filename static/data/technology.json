@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "fileId": 172,
+      "title": "依赖注入原理及简单实现",
+      "subTitle": "光阴似箭，日月如梭",
+      "imgUrl": "https://static.jqwong.cn/202109181830698.png",
+      "tag": [ "C#" ],
+      "date": "2022-05-21"
+    },
+    {
       "fileId": 171,
       "title": "SQL注入问题",
       "subTitle": "过好自己的人生，不嘲笑别人，不看低自己。",
