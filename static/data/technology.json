@@ -1,6 +1,22 @@
 {
   "data": [
     {
+      "fileId": 174,
+      "title": "记录一次并发问题的解决",
+      "subTitle": "总要经历一些失去，才能明白拥有时的珍贵",
+      "imgUrl": "https://static.jqwong.cn/202109181830698.png",
+      "tag": [ "C#" ],
+      "date": "2022-07-17"
+    },
+    {
+      "fileId": 173,
+      "title": "使用BCP完成大批量数据导出",
+      "subTitle": "静静的等待，换来的却是那么多的无奈",
+      "imgUrl": "https://static.jqwong.cn/202109181830698.png",
+      "tag": [ "C#" ],
+      "date": "2022-06-08"
+    },
+    {
       "fileId": 172,
       "title": "依赖注入原理及简单实现",
       "subTitle": "光阴似箭，日月如梭",
