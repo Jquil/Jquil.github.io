@@ -1,0 +1,118 @@
+添加扩展：
+1. XamlStyle >> https://www.cnblogs.com/dino623/p/XAML_Styler.html
+
+Nuget：
+1. MaterialDesignThemes
+
+MaterialDesignDemo：
+https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/releases
+
+Layout：（Canvas、StackPanel、DockPanel、WrapPanel、Grid）
+1. 常用布局 >> https://www.cnblogs.com/laizhenghong2012/p/8832562.html
+2. Grid       >> https://www.cnblogs.com/dotnet261010/p/6281915.html
+
+TextBlock：
+https://zhuanlan.zhihu.com/p/408594268
+https://www.cnblogs.com/programme-maker/p/10794758.html
+
+TextControls：
+https://zhuanlan.zhihu.com/p/361814525
+
+圆角矩形：
+https://blog.csdn.net/chenchong901121/article/details/53317804
+
+ListView分组：
+>> https://blog.csdn.net/lhdsjhuang/article/details/80336590
+>> https://www.cnblogs.com/zhouyinhui/archive/2007/12/07/987076.html
+
+WPF 入门教程ItemsControl：
+>> https://zhuanlan.zhihu.com/p/425729996
+
+ListView不能滑动问题：
+>> https://www.codenong.com/31658655/
+
+winform上autofac使用：
+>> https://blog.csdn.net/weixin_42930928/article/details/82767804
+
+Prism使用：
+>> NutGet控制台安装：Install-Package Prism.Desktop.Net40
+WPF MVVM 从Prism中学习设计模式之Event Aggregator 模式 >> https://www.cnblogs.com/HelloXZ/p/3384367.html
+
+List分组：
+>> https://docs.microsoft.com/zh-cn/dotnet/csharp/linq/group-query-results
+
+MVVM：
+简单示例 >> https://www.cnblogs.com/lizhiqiang0204/p/13645907.html
+DataContext >> https://www.cnblogs.com/feipeng8848/p/11637108.html
+
+ListView加载慢问题：
+虚拟化 >> https://blog.csdn.net/pxy7896/article/details/119381904
+懒加载解决 >> https://blog.csdn.net/weixin_30321709/article/details/97809417
+
+ObserableCollection 修改不通知View更新问题：(只有Add/Remove才会通知)
+>> https://docs.microsoft.com/zh-cn/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-6.0
+
+WPF 获取ControlTemplate 或DataTemplate样式里面的控件：
+https://blog.csdn.net/sanqianheijia/article/details/89342660
+
+WPF 中 Visibility.Collapsed 与 Visibility.Hidden 区别：
+https://blog.csdn.net/MrBaymax/article/details/89474702
+
+WPF显示html字符串问题：
+https://www.coder.work/article/6432776
+
+webbrowser中内容边距问题：
+https://zhidao.baidu.com/question/483752065.html
+
+WPF WebBrowser控件去除滚动条：
+https://blog.csdn.net/feng11116/article/details/50314755
+
+RichText显示文本图片实现：
+RichTextBox相关总结  >> https://www.cnblogs.com/fuchongjundream/p/3889469.html
+github >> https://github.com/stimulant/SocialStream/tree/master/XAMLConverter
+string to Stream >> https://blog.csdn.net/qq_32704935/article/details/50297257
+binding text >> https://blog.csdn.net/qi_qi_0220/article/details/116167938
+
+WPF Toolbar：
+https://zhuanlan.zhihu.com/p/420428140
+
+
+FlowDocument：
+1. 流文档概述 >> https://docs.microsoft.com/zh-cn/dotnet/desktop/wpf/advanced/flow-document-overview?view=netframeworkdesktop-4.8
+2. https://www.zhaokeli.com/article/8181.html
+3. https://blog.csdn.net/qq_42068856/article/details/119084899
+4. WPF FlowDocument中的Inline级元素 >> https://blog.csdn.net/qq_42068856/article/details/119084595
+
+MVVM 更新UI问题：
+NotifyPropertyChanged("lastContent");  =>> name 不能包含特殊字符！
+
+WPF的窗体设置WindowStyle=none时，如何移动窗体：
+https://www.cnblogs.com/tommy-huang/p/4610524.html
+
+WPF保持窗口圆角时，去掉顶部白条：
+https://blog.51cto.com/u_15127698/4529757
+
+在WPF中最大化窗口并将WindowState设置为None的任务栏：
+https://blog.csdn.net/mzl87/article/details/104466242
+
+
+ListBox自定义滚动条：
+https://blog.csdn.net/ht_zhaoliubin/article/details/39054073
+
+WPF Grid动态显示列：
+https://blog.51cto.com/u_15383815/4720012
+https://aitos.jp/blogs/ito/?p=1554
+
+WPF 宽度百分比显示问题：
+https://cloud.tencent.com/developer/ask/sof/38653
+
+WPF让ListView或ListBox中的WrapPanel 自动换行：
+https://www.jianshu.com/p/bd335ef7b6a4
+
+Popup控件的位置问题：
+https://blog.csdn.net/qq_33712555/article/details/82498432
+
+WPF ListViewItem点击事件：
+https://blog.csdn.net/u014117094/article/details/46647465
+
+
