@@ -1,0 +1,16 @@
+01. 图片懒加载 + 缓存 图片占位使用ProgressIndicator
+02. 夜间模式
+03. 歌曲播放：https://dev.mi.com/console/doc/detail?pId=2481
+04. 更换底部ICO
+Y 05. 歌曲下拉菜单操作
+06. 歌词滚动
+07. 下拉重载
+Y08. 数据库存储、远端存储
+09. UI美化
+10. 每天同步一次歌单
+Y11. 注册页，登录页
+12. 下拉刷新，重新加载
+Y13. 状态布局
+14. 查看歌手：ModalBottomSheetLayout
+15. 歌单歌曲数量
+16. 收藏至歌单，未登录时，toast在下一层activity中显示
