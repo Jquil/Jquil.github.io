@@ -1,0 +1,14 @@
+1. 获取
+https://c9h8gqi5g6h1a358ufag.baseapi.memfiredb.com/rest/v1/originuser?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImV4cCI6MzE4ODU0NDYzMiwiaWF0IjoxNjUwNjI0NjMyLCJpc3MiOiJzdXBhYmFzZSJ9.hKCtpodoAe0mGL1YVc_u88oHm4DBFxFeGJkoHSEO6Es
+
+2. 查询
+https://c9h8gqi5g6h1a358ufag.baseapi.memfiredb.com/rest/v1/originuser?apikey=&name=eq.Jq&password=eq.wwwwww
+
+3. 添加
+insert.jpg  成功返回201
+
+4. 修改
+update1.jpg/update2.jpg 成功返回204
+
+5. API文档
+https://postgrest.org/en/stable/api.html
