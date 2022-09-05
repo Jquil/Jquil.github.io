@@ -1,15 +1,18 @@
 USE [TYLD_ZKDF]
 GO
 
-/****** Object:  StoredProcedure [dbo].[prc_PageResult]    Script Date: 2022/8/15 16:00:32 ******/
+/****** Object:  StoredProcedure [dbo].[prc_PageResult]    Script Date: 2022/4/14 14:52:25 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-
- CREATE PROCEDURE [dbo].[prc_PageResult] 
+ 
+--/*-----存储过程 分页处理 孙伟 --创建 -------*/ 
+  --/*-----存储过程 分页处理 浪尘 --修改----------*/ 
+  --/*----- 对数据进行了分处理使查询前半部分数据与查询后半部分数据性能相同 -------*/ 
+  create PROCEDURE [dbo].[prc_PageResult] 
   (  
   @tableName     nvarchar(4000),        ----要显示的表或多个表的连接 
   @showColumn     nvarchar(4000) = '*',    ----要显示的字段列表 
@@ -178,14 +181,12 @@ GO
                        +' where '+@pkColumn+' <(select min('+ @pkColumn +') from('+ @SqlSelect+' top '+ CAST(@PageSize*(@CurrentPage-2)+@lastcount as Varchar(20)) +' '+ @pkColumn +' from '+@tableName 
                        +' where (1=1) '+ @strCondition +' order by '+ @ascColumn +' '+ @strSortType+') AS TBMaxID)' 
                        +' '+ @strCondition+' order by '+ @ascColumn +' '+ @strSortType+') AS TempTB'+' order by '+ @ascColumn +' '+ @strFSortType             
-       end   
-	   print @strTmp  
+       end     
    end 
 ------返回查询结果----- 
 exec sp_executesql @strTmp 
 select datediff(ms,@timediff,getdate()) as 耗时 
 --print @strTmp 
 SET NOCOUNT OFF 
-
 GO
 
