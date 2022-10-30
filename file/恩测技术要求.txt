@@ -1,0 +1,25 @@
+1. 串口通信
+NI-VISA：USB、GPIB
+
+2. WinForm窗体开发
+
+3. SCPI指令集文档
+
+
+[1] [C#实现仪器的自动化控制](https://www.cnblogs.com/hitfredrick/p/6402998.html)
+
+[2] [超简单的一种通信，2分钟搞懂，串口通讯的工作原理！](https://www.bilibili.com/video/BV1y34y147s5)
+
+[3] [USB和串口(COM)的区别，以及相互转换](http://blog.chinaunix.net/uid-25940085-id-5758983.html)
+
+[4] [什么是GPIB接口？](https://blog.csdn.net/qiuchangyong/article/details/112079371)
+
+[5] [下载NI-VISA](https://www.ni.com/zh-cn/support/downloads/drivers/download.ni-visa.html#346210)
+
+[6] [C#通过NI-VISA操作Tektronix TBS 2000B系列示波器 ](https://www.cnblogs.com/seabluescn/p/14404546.html)
+
+[7] [试水VISA编程（2）——一键读取示波器数据](https://blog.csdn.net/leokingszx/article/details/78798726)
+
+[8] [[经验栈]C#与泰克示波器(Tektronix oscilloscope)MSO64通信操作](https://www.cnblogs.com/wulinn/p/13183123.html)
+
+[9] [分享一下常用的SCPI指令及其解释](https://newbie-bt.gitee.io/2015/SCPI_cmd/)

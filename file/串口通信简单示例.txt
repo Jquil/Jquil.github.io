@@ -1,0 +1,133 @@
+using System;
+using System.IO.Ports;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WF_SerialPortDemo
+{
+    public partial class Form1 : Form
+    {
+        #region 前置数据
+        /// <summary>
+        /// 是否打开串口
+        /// </summary>
+        bool _isOpenPort = false;
+
+        /// <summary>
+        /// 串口对象
+        /// </summary>
+        SerialPort _sp = null;
+        #endregion
+
+        #region 构造器
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        #endregion
+
+        #region 窗体加载事件
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //InitPorts();
+        }
+        #endregion
+
+        #region 点击事件
+        /// <summary>
+        /// 点击事件: 扫描端口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_ScanPort_Click(object sender, EventArgs e)
+        {
+            InitPorts();
+        }
+
+        /// <summary>
+        /// 点击事件: 打开串口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_OpenPort_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _sp = new SerialPort()
+                {
+                    PortName = CB_PortName.SelectedItem.ToString(),
+                    BaudRate = int.Parse(CB_BaudRate.SelectedItem.ToString()),
+                    DataBits = int.Parse(CB_DataBit.SelectedItem.ToString()),
+                    Parity = Parity.None,
+                    Handshake = Handshake.None,
+                };
+                _sp.DataReceived += Port_DataReceived;
+                _sp.Open();
+                _isOpenPort = true;
+                MessageBox.Show("打开串口成功");
+            }
+            catch(Exception error)
+            {
+                MessageBox.Show($"打开串口失败: {error.Message}");
+            }
+        }
+
+        /// <summary>
+        /// 点击事件：发送内容
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_Send_Click(object sender, EventArgs e)
+        {
+            if (!_isOpenPort)
+            {
+                MessageBox.Show("请先打开串口");
+                return;
+            }
+            _sp.Write(TB_Send.Text);
+        }
+
+
+        /// <summary>
+        /// 点击事件：清空接收文本
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_Clear_Click(object sender, EventArgs e)
+        {
+            TB_Receive.Clear();
+        }
+        #endregion
+
+        #region 初始化端口
+        /// <summary>
+        /// 初始化端口
+        /// </summary>
+        private void InitPorts()
+        {
+            var data = SerialPort.GetPortNames();
+            if(data == null || data.Length == 0)
+            {
+                MessageBox.Show("找不到连接的串口设备");
+            }
+            this.CB_PortName.DataSource = data;
+        }
+        #endregion
+
+        #region 串口接收数据事件
+        /// <summary>
+        /// 串口接收数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Port_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            byte[] data = new byte[_sp.BytesToRead];
+            _sp.Read(data, 0, data.Length);
+            this.Invoke(new Action(() => {
+                TB_Receive.Text += $"{Encoding.UTF8.GetString(data)}";
+            }));
+        }
+        #endregion
+    }
+}
