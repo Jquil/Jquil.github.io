@@ -1,0 +1,16 @@
+SVN：
+https://ADMINIS-0L030FU/svn/TL.BTS.LAB
+SVN开发（上位机）：
+https://ADMINIS-0L030FU/svn/TL.BTS.LAB/Development/Master
+SVN开发（中位机）：
+https://ADMINIS-0L030FU/svn/TL.BTS.LAB/Development/Median
+SVN测试：
+https://ADMINIS-0L030FU/svn/TL.BTS.LAB/Test
+用户名/密码：
+名字全拼小写/名字全拼小写
+
+导入忽略文件夹和文件类型配置
+在SVN项目中
+右键 - TortoiseSVN - 属性 - 导入
+选择 %SVN项目所在路径%\TL.BTS.LAB\Common\SVN\svn_global_ignores.svnprops 
+打开 - 确定即可
