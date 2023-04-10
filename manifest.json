@@ -12,6 +12,6 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "technology_path":"/technology.json",
+  "technology_path":"/static/data/technology.json",
   "baseurl_markdown":"https://md.jqwong.cn/"
 }
