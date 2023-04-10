@@ -13,5 +13,6 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "technology_path":"/static/data/technology.json",
-  "baseurl_markdown":"https://md.jqwong.cn/"
+  "baseurl_markdown":"https://md.jqwong.cn/",
+  "githubToken":"AZ2l0aHViX3BhdF8xMUFPRTNETEEwNzl6RGFpRGtWTkhOXzBCTGpnaGJXTkNSY1F0a01nTEZROWMxOXZBclJOVjBoTVRjbWhmTUNrR0ZZQlA3TVlXQk80eUFvU2sw"
 }
