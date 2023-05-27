@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //const _baseurl = "https://apib2cloud.jqwong.cn"
+    const _baseurl = "https://apib2cloud.835292266.workers.dev/"
+    getBaseInfo()
+    getUploadUrl("https://api004.backblazeb2.com","4_004a983ae13f7b70000000005_01ab87d3_790cc1_acct_iopPNqq8-CeK8AmGdfRsfTPNAuI=")
+
+    function getBaseInfo(){
+        fetch(_baseurl+"/b2api/v2/b2_authorize_account",{
+            mode:'cors',
+            headers:{
+                "Authorization":"Basic MDA0YTk4M2FlMTNmN2I3MDAwMDAwMDAwNTpLMDA0WlF1Y3NjTjNsU3BHUDQ4WDN4SHFnRy9aeWE0"
+            }
+        })
+        .then(res => res.text())
+        .then(res => {
+            console.log(res)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }
+
+
+    function getUploadUrl(apiUrl,token){
+        apiUrl = apiUrl.replace("https://","")
+        const _bucketId = "1a3998e37a9ef1337ff70b17" // markdown bucket
+        fetch(_baseurl+"/b2api/v2/b2_get_upload_url?apiUrl="+apiUrl,{
+            mode:'cors',
+            method:'POST',
+            headers:{
+                "Authorization":token,
+            },
+            body:JSON.stringify({
+                "bucketId":_bucketId
+            })
+        })
+        .then(res=>res.text())
+        .then(res=>{
+            console.log(res)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+    }
+
+
+    function upload(uploadUrl,authorizationToken,directory,filename,file){
+        filename = directory + "/" + filename
+        var sha1 = ""
+        fetch(uploadUrl,{
+            method:'POST',
+            headers:{
+                "Authorization":authorizationToken,
+                "X-Bz-File-Name":filename,
+                "X-Bz-Content-Sha1":sha1,
+                "X-Bz-Info-Author": "unknown",
+                "X-Bz-Server-Side-Encryption": "AES256"
+            },
+            body:{
+
+            }
+        })
+    }
+
+</script>
+</html>
