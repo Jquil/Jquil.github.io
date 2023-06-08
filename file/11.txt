@@ -1,8 +1,0 @@
-data加密:
-[1] JSON.stringify(data)
-[2] crypto.randomBytes(16)
-    构建16字节随机数据的buffer
-[3] 将数据通过'aes'加密
-[4] 再通过'aes'加密构成'params'参数
-[5] 将私钥通过'rsa'加密构成'encSecKey'参数
-[6] 将这两个参数构建成字符串
