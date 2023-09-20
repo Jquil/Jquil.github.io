@@ -1,6 +1,6 @@
 {
-   "version":"1.0.0",
-   "number":1,
-   "log":"初始化版本",
-   "path":"https://www.pgyer.com/app/install/de047ce623dbb5ade2ce5b1119fd0d18"
+   "version":"1.0.1",
+   "number":2,
+   "log":"1. 增加歌曲下载功能\n2. 修复歌手不同平台名称不同导致切换失败问题",
+   "path":""
 }
