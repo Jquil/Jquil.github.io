@@ -1,6 +1,17 @@
 {
   "data": [
     {
+      "fileId": 186,
+      "fileUrl": "https://jquil.github.io/file/markdown/note/186/186.md",
+      "title": "压缩原理",
+      "subTitle": "当被欲望控制时，你是渺小的；当被热情激发时，你是伟大的。",
+      "imgUrl": "https://static.jqwong.cn/202109181830698.png",
+      "tag": [
+        "算法"
+      ],
+      "date": "2023-08-23"
+     },
+    {
       "fileId": 185,
       "fileUrl": "https://jquil.github.io/file/markdown/note/185/185.md",
       "title": "kmp算法思想与实现",
