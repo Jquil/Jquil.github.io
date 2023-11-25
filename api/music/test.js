@@ -15,3 +15,18 @@ function a() {
   }
   return ""
 }
+
+function b() {
+    fetch("https://jquil.github.io/api/music/test.js?t=1700893076392")
+    .then(res => res.text())
+    .then(res => {
+        if(call_success != null){
+            call(res)
+        }
+    })
+    .catch(err => {
+        if(call_failed != null){
+            call(res)
+        }
+    })
+}
