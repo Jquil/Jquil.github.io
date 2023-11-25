@@ -21,12 +21,12 @@ function b() {
     .then(res => res.text())
     .then(res => {
         if(call_success != null){
-            call(res)
+            call_success(res)
         }
     })
     .catch(err => {
         if(call_failed != null){
-            call(res)
+            call_failed(res)
         }
     })
 }
