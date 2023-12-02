@@ -1,6 +1,17 @@
 {
   "data": [
     {
+      "fileId": 187,
+      "fileUrl": "https://jquil.github.io/file/markdown/note/187/index.md",
+      "title": "记录分离曲线实现记录",
+      "subTitle": "",
+      "imgUrl": "https://static.jqwong.cn/202109181830698.png",
+      "tag": [
+        "Chart"
+      ],
+      "date": "2023-09-10"
+     },
+    {
       "fileId": 186,
       "fileUrl": "https://jquil.github.io/file/markdown/note/186/186.md",
       "title": "压缩原理",
